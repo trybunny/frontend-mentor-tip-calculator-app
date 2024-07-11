@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+      <title>Frontend Mentor | Tip calculator app</title>
+      <link rel="stylesheet" href="app.css" />
+      <script defer src="script.js"></script>
+   </head>
+   <body>
+      <main>
+         <section class="wrapper">
+            <div class="app">
+               <h2 class="app-header">SPLI<br />TTER</h2>
+               <div class="app-main">
+                  <div class="app-ips">
+                     <div class="app-ips-item">
+                        <div class="label-error-container">
+                           <label for="bill">Bill</label>
+                        </div>
+                        <div class="ip-container">
+                           <img src="./images/icon-dollar.svg" alt="" />
+                           <input type="number" id="bill" name="bill" autocomplete="off" />
+                        </div>
+                        <p class="error error-hidden"></p>
+                     </div>
+                     <div class="app-ips-item">
+                        <div class="label-error-container">
+                           <label for="tip">Select Tip %</label>
+                        </div>
+                        <div class="tip-options">
+                           <div class="tip-option">5%</div>
+                           <div class="tip-option">10%</div>
+                           <div class="tip-option">15%</div>
+                           <div class="tip-option">25%</div>
+                           <div class="tip-option">50%</div>
+                           <input type="number" autocomplete="off" id="tip" class="tip-option custom-tip" placeholder="Custom" />
+                        </div>
+                        <p class="error error-hidden"></p>
+                     </div>
+                     <div class="app-ips-item">
+                        <div class="label-error-container">
+                           <label for="number-of-ppl">Number of People</label>
+                        </div>
+                        <div class="ip-container">
+                           <img src="./images/icon-person.svg" alt="person-icon" />
+                           <input type="number" name="number of people" id="number-of-ppl" autocomplete="off" />
+                        </div>
+                        <p class="error error-hidden"></p>
+                     </div>
+                  </div>
+                  <div class="app-result">
+                     <div class="app-result-item">
+                        <div class="res-info">
+                           <h3 class="res-info-name">Tip Amount<br /><span>/ person</span></h3>
+                           <p class="res-info-value">
+                              <img src="./images/icon-dollar.svg" alt="" />
+                              <span>0.00</span>
+                           </p>
+                        </div>
+                        <div class="res-info">
+                           <h3 class="res-info-name">Total<br /><span>/ person</span></h3>
+                           <p class="res-info-value">
+                              <img src="./images/icon-dollar.svg" alt="" />
+                              <span>0.00</span>
+                           </p>
+                        </div>
+                     </div>
+                     <button type="button" class="app-result-item btn" id="reset-btn">RESET</button>
+                  </div>
+               </div>
+            </div>
+            <section class="small-window">🙃Our app is only for mobile, tablet, and desktop compatible.🙃</section>
+         </section>
+      </main>
+      <!-- <footer>
+         <div class="attribution">Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+      </footer> -->
+   </body>
+</html>
